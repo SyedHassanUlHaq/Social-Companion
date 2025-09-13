@@ -1,0 +1,131 @@
+/* styles.css */
+:root {
+    --primary: #6366f1;
+    --secondary: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --light: #f8fafc;
+    --dark: #1e293b;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --rounded: 12px;
+    --rounded-lg: 16px;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .main-container {
+    background: white;
+    border-radius: var(--rounded-lg);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: var(--dark);
+  }
+  
+  .status {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--rounded);
+    transition: all 0.2s;
+  }
+  
+  .button-primary {
+    background: var(--primary);
+    color: white;
+  }
+  
+  .button-primary:hover {
+    background: #5856eb;
+  }
+  
+  .button-danger {
+    background: var(--danger);
+    color: white;
+  }
+  
+  .button-danger:hover {
+    background: #dc2626;
+  }
+  
+  .button-success {
+    background: var(--secondary);
+    color: white;
+  }
+  
+  .button-success:hover {
+    background: #0d9488;
+  }
+  
+  .button-warning {
+    background: var(--warning);
+    color: white;
+  }
+  
+  .button-warning:hover {
+    background: #d97706;
+  }
+  
+  .sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  
+  .section-button {
+    padding: 0.75rem;
+    background: var(--secondary);
+    color: white;
+    border-radius: var(--rounded);
+    transition: all 0.2s;
+  }
+  
+  .section-button:hover {
+    background: #0d9488;
+  }
+  
+  .audio-controls {
+    background: #f1f5f9;
+    border-radius: var(--rounded);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .audio-title {
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+  
+  .audio-title span {
+    color: var(--secondary);
+  }
+  
