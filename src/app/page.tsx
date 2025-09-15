@@ -35,8 +35,12 @@ export default function Home() {
 
       // Store sections in state so UI renders buttons
       setSections(book.sections);
+      const response = {
+        success: "true",
+        message: `Found ${book.sections.length} sections for ${book.title}. Pick one below.`
+      }
 
-      return `Found ${book.sections.length} sections for ${book.title}. Pick one below.`;
+      return response;
     },
   };
 
