@@ -40,7 +40,7 @@ export default function Home() {
         message: `Found ${book.sections.length} sections for ${book.title}. Pick one below.`
       }
 
-      return response;
+      return `Found ${book.sections.length} sections for ${book.title}. Pick one below.`;
     },
   };
 
